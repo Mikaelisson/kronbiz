@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+.container-principal{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*header*/
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 110px;
+    position: fixed;
+}
+
+.container-header{
+    margin: 0 2%;
+}
+
+/*social*/
+.social{
+    height: 50px;
+    text-align: center;
+}
+
+.social-midia, .social-midia2, .social-midia3, .social-midia4{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: gray solid 1px;
+    border-radius: 50%;
+    margin: 10px 5px;
+}
+
+.social-midia a > img, .social-midia2 a > img, .social-midia3 a > img, .social-midia4 a > img {
+    width: 100%;
+    padding: 2px;
+}
+.social-midia3 a > img{padding: 3px;}
+
+/*menu options*/
+.menu ul{
+    margin-top: 20px;
+    list-style: none;
+    float: right;
+}
+
+.menu ul li{
+    float: left;
+    margin-left: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.menu ul li a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+/*logo menu*/
+h1{
+    margin-top: 10px;
+    color: white;
+    float: left;
+}
+
+.logo a > img{
+    float: left;
+    width: 40px;
+    margin-top: 8px;
+    border-radius: 50%;
+}
+
+/*banner conteudo*/
+
+.banner{
+    width: 100%;
+    height: 600px;
+    background-image: url('https://exame.com/wp-content/uploads/2021/06/Lacoste-Iguatemi-loja.jpg?quality=70&strip=info');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner > h2{
+    margin-top: 300px;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: black 0 0 5px;
+}
+
+.banner > a{
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border-radius: 40px;
+    transition: 0.8s;
+}
+
+.banner > a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+/*container*/
+
+.container{
+    max-width: 1000px;
+    height: 100%;
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: black 0px 0px 5px;
+}
+
+.content1 > h1{
+    color: black;
+    float: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content1 > p{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+/*produtos*/
+
+.products, .products2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product1, .product2, .product3{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: gray;
+    text-align: center;
+    border: rgba(0, 0, 0, 0.315) solid 2px;
+}
+
+.product4, .product5, .product6{
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    border-radius: 20px;
+    display: inline-block;
+    background-color: gray;
+    text-align: center;
+    border: rgba(0, 0, 0, 0.315) solid 2px;
+}
+
+.product1 > a, .product2 > a, .product3 > a, .product4 > a, .product5 > a, .product6 > a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    text-shadow: black 0 0 5px;
+    box-shadow: black 0 0 10px;
+    padding: 15px;
+    border-radius: 40px;
+    display: inline-block;
+    margin-top: 50%;
+}
+
+.product1 > a:hover, .product2 > a:hover, .product3 > a:hover, .product4 > a:hover, .product5 > a:hover, .product6 > a:hover{
+    color: white;
+    background-color: black;
+    transition: 0.6s;
+}
+
+/*fotos produtos*/
+
+.product1{
+    background-image: url('https://static.netshoes.com.br/produtos/camisa-polo-lacoste-original-fit-masculina/06/D66-0138-006/D66-0138-006_zoom4.jpg?ts=1625201301&ims=544x');
+    background-size: cover;
+    background-position: center;
+}
+.product2{
+    background-image: url('https://image1.lacoste.com/dw/image/v2/AAQM_PRD/on/demandware.static/Sites-BRECOM-Site/Sites-master/pt_BR/dw95bfd130/PH5284_YZK_32.jpg?imwidth=915&impolicy=product');
+    background-size: cover;
+    background-position: center;
+}
+.product3{
+    background-image: url('https://image1.lacoste.com/dw/image/v2/AAQM_PRD/on/demandware.static/Sites-PT-Site/Sites-master/pt_PT/dw5d57343a/L1212_166_36.jpg?imwidth=915&impolicy=product');
+    background-size: cover;
+    background-position: center;
+}
+.product4{
+    background-image: url('https://t-static.dafiti.com.br/witex3aXRsNEebW1Hz1Ew_aXIAs=/fit-in/427x620/static.dafiti.com.br/p/lacoste-bon%25c3%25a9-lacoste-logo-vermelho-0708-5612038-1-product.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.product5{
+    background-image: url('https://imgcentauro-a.akamaihd.net/900x900/95395001/sapatenis-lacoste-graduate-319-2-brz-masculino-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.product6{
+    background-image: url('https://t-static.dafiti.com.br/UP6ZCaA7z9eE0EDawWYhImweuMQ=/fit-in/250x480/dafitistatic.dafiti.com.br%2Fp%2Flacoste-bon%25c3%25a9-lacoste-logo-verde-1722-1487997-1-product.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/*fim produtos*/
+
+footer{
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+}
+
+footer > a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 40px;
+    background-image: linear-gradient(45deg, orange, red);
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a > img{
+    float: left;
+    margin-right: 5px;
+    width: 20px;
+}
+
+/*----------*/
